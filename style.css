@@ -1,118 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&display=swap');
+
 body {
   font-family: Quicksand, Arial;
-  height: 2000px;
-  background-color: rgb(255, 220, 226);
-  scroll-behavior: smooth;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 30px;
-}
-
-div {
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  height: auto;
 }
 
 
-.header {
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
-  right:0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  right: 0;
+  height: 60px;
   justify-content: space-between;
 
-
-  height: 50px;
   background-color: burlywood;
-  padding: 10px;
-  
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.link {
-  padding-left: 20px;
-  transition: color 0.3s;
-}
-
-.link:hover {
-  color: white;
-}
-
-.logo-container {
+.navbar-left-side {
   display: flex;
   align-items: center;
 }
 
-.main-logo {
- width: 50px;
- border-radius: 111px;
- object-position: center;
+.navbar-left-side-logo {
+  width: 50px;
+  border-radius: 50px;
 }
 
-.name {
+.navbar-side-bar-name {
+  margin-left: 10px;
+}
+
+.navbar-side-bar-name {
   font-size: 30px;
-  margin-left: 20px;
   font-weight: 500;
-  color: rgb(99, 6, 6);
 }
 
-.overview-container {
-  text-align: justify;
-  margin-top: 60px;
-  margin-bottom: 50px;
-}
-
-#Overview {
-  scroll-margin-top: 100px;
-}
-
-.missionandvision-container {
-  text-align: justify;
-  padding-top: 50px;  
-}
-
-.brief-overview {
-  text-decoration: underline;
-}
-
-.text {
-  line-height: 30px;
-}
-
-.overview-sub-container {
-  border-color: black;
-  border-width: 1px;
-  border-style: solid;
-  padding: 25px;
-  background-color: rgb(158, 84, 84);
-  border-radius: 100px;
-}
-
-.mission-and-vision-container {
+.banner {
   display: flex;
   justify-content: space-between;
-  border-radius: 50px;
-  border-color: black;
-  border-style: solid;
-  overflow: hidden;
-  border-width: 1px;
-  margin-top: 125px;
+  padding-left: 50px;
+  align-items: center;
+  background-color: rgb(255, 224, 235);
+  height: 100vh;
 }
 
-.left-side {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.411);
-  padding: 20px;
+.banner-logo {
+  width: 350px;
+  border-radius: 1000px;
 }
 
-.right-side {
-  width: 100%;
-  padding: 20px;
-  background-color: pink;
+.banner-brand-name,
+.banner-tagline {
+  font-family: Pacifico;
 }
 
-#visionandmission {
-  scroll-margin-top: 100px;
+.banner-brand-name {
+  font-size: 150px;
+  margin-bottom: 200px;
+  color: #6f4e37;
+}
+
+.banner-tagline {
+  font-size: 40px;
+  font-weight: normal;
+  color: rgb(182, 133, 141);
+  text-align: center;
+  font-family: Quicksand;
+}
+
+.banner-left-side {
+  padding-right: 200px;
+}
+
+/*FOR RESPONSIVE DESIGN*/
+@media (max-width: 1700px) and (min-width: 1549px) {
+  .banner-brand-name {
+    font-size: 130px;
+  }
+}
+
+@media (max-width: 1548px) and (min-width: 1465px) {
+  .banner-brand-name {
+    font-size: 120px;
+    margin-bottom: 100px;
+  }
+
+  .banner-tagline {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1464px) and (min-width: 1375px) {
+  .banner-brand-name {
+    font-size: 110px;
+    margin-bottom: 100px;
+  }
+
+  .banner-tagline {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1374px) and (min-width: 1300px) {
+  .banner-brand-name {
+    font-size: 100px;
+    margin-bottom: 100px;
+  }
+
+  .banner-tagline {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1299px) and (min-width: 1230px) {
+  .banner-brand-name {
+    font-size: 90px;
+    margin-bottom: 50px;
+  }
+
+  .banner-tagline {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1229px) and (min-width: 1150px) {
+  .banner-brand-name {
+    font-size: 80px;
+    margin-bottom: 30px;
+  }
+
+  .banner-tagline {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1149px) and (min-width: 551px) {
+  .banner-brand-name {
+    font-size: 80px;
+    margin-bottom: 30px;
+  }
+
+  .banner-tagline {
+    font-size: 20px;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .banner-left-side {
+    padding-right: 0;
+  }
+
+  .banner-logo {
+    width: 300px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 550px) and (min-width: 450px) {
+  .banner-brand-name {
+    font-size: 55px;
+    margin-bottom: 30px;
+  }
+
+  .banner-tagline {
+    font-size: 20px;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .banner-left-side {
+    padding-right: 0;
+  }
+
+  .banner-logo {
+    width: 300px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 449px) and (min-width: 1px) {
+  .banner-brand-name {
+    font-size: 50px;
+    margin-bottom: 0px;
+  }
+
+  .banner-tagline {
+    font-size: 16px;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .banner-left-side {
+    padding-right: 0;
+  }
+
+  .banner-logo {
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
 }
